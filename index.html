@@ -80,14 +80,26 @@
 		.imprint a {
 			color: gray;
 		}
+
+		.yes .answer--no {
+			display: none;
+		}
+
+		.no .answer--yes {
+			display: none;
+		}
+
+		.no .details {
+			display: none;
+		}
 	</style>
 	<link href='http://fonts.googleapis.com/css?family=Leckerli+One|Pacifico' rel='stylesheet' type='text/css'>
 </head>
-<body>
+<body class="no">
 	<div class="wrapper">
 		<div class="question">Wird gestreikt?</div>
-		<div class="answer">Ja<sup class="star">*</sup></div>
-		<div class="answer" style="display:none;">Nein</div>
+		<div class="answer answer--yes">Ja<sup class="star">*</sup></div>
+		<div class="answer answer--no">Nein</div>
 		<div class="details">
 			<span class="star">*</span>
 			<ul>
